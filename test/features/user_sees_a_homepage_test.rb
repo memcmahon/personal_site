@@ -9,7 +9,7 @@ class HomepageTest < CapybaraTestCase
   end
 
   def test_user_can_not_visit_nonexistent_page
-    visit '/blog'
+    visit '/weather'
 
     assert page.has_content?("Page not found.")
     assert_equal 404, page.status_code
